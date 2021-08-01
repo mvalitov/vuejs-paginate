@@ -135,6 +135,11 @@ export default {
       this.selected = this.forcePage
     }
   },
+  watch: {
+    forcePage() {
+      this.$forceUpdate()
+    }
+  },
   computed: {
     selected: {
       get: function() {
